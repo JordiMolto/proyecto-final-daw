@@ -1,6 +1,6 @@
 import React from 'react'
 import { Navbar, Nav, Container } from 'react-bootstrap'
-import { Outlet, Link } from 'react-router-dom'
+import { Outlet, Link ,useNavigate} from 'react-router-dom'
 import Logo from '../../imgs/logo_transparent.png'
 
 //USUARIO LOGIN / LOGOUT
@@ -9,8 +9,19 @@ import { LogoutButton } from '../views/Logout';
 import { Profile } from '../Profile';
 import { useAuth0 } from '@auth0/auth0-react'
 
+
 function NavbarComp() {
         const { isAuthenticated } = useAuth0();
+       
+       /* const navigate = useNavigate();
+        
+        function handleClick() {
+      navigate('/home');
+  }*/
+
+
+
+
         //utilizamos este parámetro para hacer comprobaciones en el login
         return (
             //esto <> es lo mismo que poner un Fragment
@@ -23,7 +34,8 @@ function NavbarComp() {
                             <Navbar.Collapse id="navbarScroll">
                                 <Nav className="prueba navbar-collapse justify-content-end me-auto my-2 my-lg-0">
                                     <Nav.Link className='navText' as={Link} to={'/'}>Home</Nav.Link>
-                                    <a className='navText' href='/#id_about'>About</a>
+                                    {/*<Link to="/politicasPrivacidad">AboutLINK</Link>*/}
+                                    <a className='navText' href='/#id_about' >About</a>
                                     <a className='navText' href='/#id_skills'>Conocimientos</a>
                                     <a className='navText' href='/#id_templates'>Templates</a>
                                     <a className='navText' href='/#id_plans'>Precios</a>

@@ -1,10 +1,10 @@
-.polytics {
-    overflow-wrap: break-word;
-}
 
-.fullRow img {
+.imgPolytics {
     height: auto;
     width: 100%;
+    filter: brightness(30%); 
+    background-size:cover;
+    background-attachment: fixed;
 }
 
 .containerPolytics {

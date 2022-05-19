@@ -1,4 +1,4 @@
-export default planes = [
+/*export default planes = [
     nombre:"",
     precio:"", 
-]
+]*/
