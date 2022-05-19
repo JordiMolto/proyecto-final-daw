@@ -1,0 +1,51 @@
+.containerWallpapers{
+    display: flex;
+    background-color: #eee;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+
+.centerWallpapers{
+    column-count: 3;
+    width: 1200px;
+}
+
+article{
+    display: inline-block;
+    width: 370px;
+    transition: box-shadow 0.2s ease;
+    margin: 40px 10px 0 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+article > img {
+    width: inherit;
+    border-radius: 5px 5px 0 0;
+}
+
+article > p {
+    margin: 10px 15px;
+}
+
+article:hover{
+    box-shadow: 0px 6px 10px rgb(0,0,0,0.4) ;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    padding: 22px;
+    box-shadow: 1px 2px 5px rgb(0,0,0,0.3);
+    z-index: 2;
+    position: relative;
+}
+
+header input{
+    outline: none;
+    border: solid 1px rgb(114, 180, 255);
+    padding: 10px 5px;
+    border-radius: 4px;
+}

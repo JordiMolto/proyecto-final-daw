@@ -1,0 +1,60 @@
+/* PALETA DE COLORES */
+:root {
+    --color-negro: #181818;
+    --color-blanco: #fff;
+    --color-morado: #5b43d6;
+    --color-morado-oscuro: #332179;
+    --color-morado-claro: #7a19f1;
+    --color-amarillo: #f2b200;
+}
+
+
+.about {
+    width: 100%;
+    margin: 150px 0 250px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about .content img {
+    height: auto;
+    width: auto;
+    max-width: 100%;
+}
+
+.about-text {
+    width: 550px;
+    max-width: 100%;
+    padding: 0 10px;
+    margin-top: 40px;
+}
+
+.content {
+    width: 1280px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about .content img {
+    transition: transform .3s; /* Animation */
+  }
+  
+  .about .content img:hover {
+    transform: scale(0.95); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+
+@media (max-width: 991px) {
+    .about .content img {
+        height: auto;
+        width: auto;
+    }
+
+    #id_about {
+        padding: 0px 6%;
+    }
+}

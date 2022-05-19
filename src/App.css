@@ -1,6 +1,17 @@
+/* PALETA DE COLORES */
+:root {
+  --color-negro: #181818;
+  --color-blanco: #fff;
+  --color-morado: #5b43d6;
+  --color-morado-oscuro: #332179;
+  --color-morado-claro: #7a19f1;
+  --color-amarillo: #f2b200;
+}
+
+/*
 .App {
   text-align: center;
-}
+}*/
 
 .App-logo {
   height: 40vmin;
@@ -32,7 +43,78 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
+  }
+}
+
+.zoom {
+  transition: transform .2s;
+  /* Animation */
+}
+
+.zoom:hover {
+  transform: scale(1.05);
+  /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.slide-up {
+  animation: slide-up 2s;
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    line-height: 200px;
+  }
+
+  to {
+    opacity: 1;
+    line-height: 25px;
+  }
+}
+
+
+
+/* ESTILO PERSONALIZADO BOOTSTRAP */
+/* Navbar */
+.navBg {
+  background-color: var(--color-morado-oscuro);
+
+}
+
+.navText {
+  margin: 10px;
+  text-decoration: none;
+  color: white !important;
+  transition: 0.4s;
+}
+
+.navText:hover {
+  color: #cccccc !important;
+}
+
+.navText:focus {
+  color: #b8b8b8 !important;
+}
+
+/* Botón Login/Register */
+.btn-outline-success {
+  background-color: #ffffff !important;
+  border: 0px !important;
+  color: rgb(0, 11, 77) !important;
+  transition: 0.4s;
+}
+
+.btn-outline-success:hover {
+  background-color: #b3b3b3 !important;
+  color: rgb(0, 0, 0) !important;
+}
+
+
+@media (max-width: 991px) {
+  #navbarScroll {
+    text-align: center;
   }
 }

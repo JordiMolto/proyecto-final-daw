@@ -1,0 +1,13 @@
+.polytics {
+    overflow-wrap: break-word;
+}
+
+.fullRow img {
+    height: auto;
+    width: 100%;
+}
+
+.containerPolytics {
+    margin: 100px 0;
+    padding: 0 10%;
+}

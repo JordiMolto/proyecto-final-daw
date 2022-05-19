@@ -1,0 +1,218 @@
+/* PALETA DE COLORES */
+:root {
+    --color-negro: #181818;
+    --color-blanco: #fff;
+    --color-morado: #5b43d6;
+    --color-morado-oscuro: #332179;
+    --color-morado-claro: #7a19f1;
+    --color-amarillo: #f2b200;
+    --background-gradient: linear-gradient(30deg, #f39c12 30%, #f1c40f);
+    --gray: #34495e;
+    --darkgray: #33217923;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bodyContact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerContact {
+    width: 60%;
+    padding: 20px;
+    margin-bottom: 100px;
+    margin-top: -25px;
+}
+
+
+
+.lastnamesForm {
+    margin-left: 10px;
+}
+
+.nameForm {
+    margin-right: 10px;
+}
+
+.containerContact .row100 {
+    position: relative;
+    width: 100%;
+    display: grid;
+
+}
+
+.containerContact .row100 .col1 {
+    position: relative;
+    width: 100%;
+    padding: 0 10px;
+    margin: 30px 0 10px;
+    transition: 0.5s;
+    display: flex;
+}
+
+.containerContact .row100 .col {
+    position: relative;
+    width: 100%;
+    padding: 0 10px;
+    margin: 30px 0 10px;
+    transition: 0.5s;
+}
+
+.containerContact .row100 .inputBox {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    color: #332179;
+}
+
+.containerContact .row100 .inputBox input,
+.containerContact .row100 .inputBox.textarea textarea {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    padding: 0 10px;
+    z-index: 1;
+    color: #fff;
+}
+
+.containerContact .row100 .inputBox .text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 40px;
+    padding: 0 10px;
+    display: block;
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+
+.containerContact .row100 .inputBox input:focus+.text,
+.containerContact .row100 .inputBox input:valid+.text {
+    top: -35px;
+    left: -10px;
+}
+
+.containerContact .row100 .inputBox .line {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #332179;
+    transition: 0.5s;
+    border-radius: 2px;
+    pointer-events: none;
+}
+
+.containerContact .row100 .inputBox input:focus~.line,
+.containerContact .row100 .inputBox input:valid~.line {
+    height: 100%;
+}
+
+.containerContact .row100 .inputBox.textarea {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    padding: 10px 0;
+}
+
+.containerContact .row100 .inputBox.textarea textarea {
+    height: 100%;
+    resize: none;
+}
+
+.containerContact .row100 .inputBox textarea:focus+.text,
+.containerContact .row100 .inputBox textarea:valid+.text {
+    top: -35px;
+    left: -10px;
+}
+
+.containerContact .row100 .inputBox textarea:focus~.line,
+.containerContact .row100 .inputBox textarea:valid~.line {
+    height: 100%;
+}
+
+input[type="submit"] {
+    border: none;
+    padding: 7px 35px;
+    cursor: pointer;
+    outline: none;
+    background: #332179;
+    color: #fff;
+    border-radius: 2px;
+}
+
+/* SELECT STYLES */
+select {
+    /* Resetear Select */
+    appearance: none;
+    outline: 0;
+    border: 0;
+    box-shadow: none;
+    /* Personalizar */
+    flex: 1;
+    padding: 0 1em;
+    color: #fff;
+    background-color: var(--darkgray);
+    background-image: none;
+    cursor: pointer;
+}
+
+/* Custom Select wrapper */
+.select {
+    position: relative;
+    display: flex;
+    height: 3em;
+    border-radius: .25em;
+    overflow: hidden;
+    border: 1px solid #332179;
+
+}
+select{    
+    color: #332179;
+}
+
+/* Flecha */
+.select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1em;
+    padding-top: 0.6em;
+    background-color: #332179;
+    color: rgb(255, 255, 255);
+    transition: .25s all ease;
+    pointer-events: none;
+}
+
+/* Transición */
+.select:hover::after {
+    color: #f39c12;
+}
+
+
+/* MEDIA QUERIES*/
+
+@media (max-width: 901px) {
+    .containerContact {
+        width: 80%;
+    }
+}
+
+@media (max-width: 600px) {
+    .containerContact {
+        width: 90%;
+    }
+}

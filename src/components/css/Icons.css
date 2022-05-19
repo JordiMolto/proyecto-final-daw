@@ -1,0 +1,67 @@
+/* PALETA DE COLORES */
+:root {
+    --color-negro: #181818;
+    --color-blanco: #fff;
+    --color-morado: #5b43d6;
+    --color-morado-oscuro: #332179;
+    --color-morado-claro: #7a19f1;
+    --color-amarillo: #f2b200;
+}
+
+/* ICONS SECTION */
+#icons {
+    margin: 180px 10% 0px 10%;
+    text-align: center;
+}
+
+.icons {
+    margin: 40px 0px;
+    display: flex;
+}
+
+.icons-icon .fas {
+    font-size: 50px;
+    color: var(--color-morado-oscuro);
+    margin-bottom: 15px;
+}
+
+.icons-subtitle {
+    color: var(--color-morado-oscuro);
+}
+
+.icons-info {
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+.icons-icon:hover .fas {
+    transition: transform 1s ease, color 1s ease;
+    transform: translateY(-10px);
+    color: #7a19f1;
+    cursor: pointer;
+}
+
+/* media query ICONS SECTION */
+@media screen and (min-width: 576px) {
+    .icons-center {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .icons {
+        flex: 0 0 calc(50% - 16px);
+    }
+}
+
+@media screen and (min-width:972px) {
+    .icons {
+        flex: 0 0 calc(25% - 16px);
+    }
+}
+
+@media screen and (max-width:901px) {
+    #icons {
+        margin: 100px 10% 0px 10%!important;
+    }
+}
