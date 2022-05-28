@@ -1,33 +1,68 @@
-import React, { Component } from 'react'
+import { useState } from 'react';
+import emailjs from 'emailjs-com';
 
-export default class ContactComp extends Component {
-  render() {
-    return (
-      <div className='bodyContact'>
+function ContactComp() {
+  // setDatos rellenará los datos cada vez que el usuario escriba algo en el formulario
+  const [datos, setDatos] = useState({
+    nombre: '',
+    apellidos: '',
+    email: '',
+    select: '',
+    mensaje: '',
+  })
+  //con esta funcion haremos que cada vez quese escriba algo, se ejecute algo
+  function handleChange(event) {
+    //creamos copia de los datos
+    const newData = { ...datos }
+    //cogemos el nombre del input y lo relacionamos con su valor
+    newData[event.target.name] = event.target.value;
+    setDatos(newData)
+    console.log(newData)
+  }
+
+  function enviarEmail(e) {
+    e.preventDefault();
+    emailjs.init('HEsYcEtJac7K7X0la');
+    emailjs.sendForm('service_lqm13s1', 'template_gqgypgm', e.target,).then(res => {
+      console.log(res);
+    })
+    document.getElementById('nombreForm').value = "";
+    document.getElementById('apellidosForm').value = "";
+    document.getElementById('emailForm').value = "";
+    document.getElementById('selectForm').value = "";
+    document.getElementById('mensajeForm').value = "";
+    alert("Mensaje enviado correctamente!")
+  }
+
+
+  return (
+
+    <div >
+      <form onSubmit={enviarEmail} className='numero bodyContact'>
         <div className='containerContact'>
           <div className='row100'>
             <div className='col1'>
               <div className='inputBox nameForm'>
-                <input type="text" name="name" required="required" />
+                <input id="nombreForm" type="text" name="nombre" value={datos.nombre} onChange={handleChange} required="required" />
                 <span className='text'>Nombre</span>
                 <span className='line'></span>
               </div>
               <div className='inputBox lastnamesForm'>
-                <input type="text" name="lastnames" required="required" />
+                <input id="apellidosForm" type="text" name="apellidos" value={datos.apellidos} onChange={handleChange} required="required" />
                 <span className='text'>Apellidos</span>
                 <span className='line'></span>
               </div>
             </div>
             <div className='col'>
               <div className='inputBox'>
-                <input type="text" name="email" required="required"/>
+                <input id="emailForm" type="text" name="email" value={datos.email} onChange={handleChange} required="required" />
                 <span className='text'>Email</span>
                 <span className='line'></span>
               </div>
             </div>
             <div className='col'>
               <div className='select'>
-                <select name="select">
+                <select id="selectForm" onChange={handleChange} value={datos.select} name="select">
                   <option value="">{"-"} Seleccionar Plan {"-"}</option>
                   <option value="basic">Plan Basic</option>
                   <option value="advanced">Plan Advanced</option>
@@ -37,7 +72,7 @@ export default class ContactComp extends Component {
             </div>
             <div className='col'>
               <div className='inputBox textarea'>
-                <textarea type="text" name="message" required="required"></textarea>
+                <textarea id="mensajeForm" type="text" name="mensaje" value={datos.mensaje} onChange={handleChange} required="required"></textarea>
                 <span className='text'>Mensaje</span>
                 <span className='line'></span>
               </div>
@@ -49,7 +84,11 @@ export default class ContactComp extends Component {
             </div>
           </div>
         </div>
-      </div>
-    )
-  }
+      </form>
+
+
+    </div>
+  )
 }
+
+export default ContactComp;

@@ -7,14 +7,15 @@ export default class PoliticasPrivacidad extends Component {
   render() {
     return (
       <div >
+       
+      <div class="contenedorwallp">
         <img src={PrivatePolyticsImg} className="imgPolytics" alt="Cookie Polytics banner" />
+        <div className="centrado">POLÍTICAS DE PRIVACIDAD <p style={{fontSize:"18px", fontWeight:"normal"}}>Garantizamos la seguridad y el uso lícito de los datos de nuestros usuarios o clientes</p> </div>
+      </div>
 
         <div className='containerPolytics'>
-          <h1>POLÍTICA DE PRIVACIDAD DEL SITIO WEB</h1>
-          <a>https://www.jordimolto.dev</a>
-          <br />
-          <br />
           <h3>I. POLÍTICA DE PRIVACIDAD Y PROTECCIÓN DE DATOS</h3>
+          <a>https://www.jordimolto.dev</a>
           <p>Respetando lo establecido en la legislación vigente, jordimolto (en adelante, también Sitio Web) se compromete a adoptar las medidas técnicas y organizativas necesarias, según el nivel de seguridad adecuado al riesgo de los datos recogidos.
           </p>
           <h4>Leyes que incorpora esta política de privacidad</h4>

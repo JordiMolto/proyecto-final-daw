@@ -7,10 +7,14 @@ export default class PoliticasCookies extends Component {
   render() {
     return (
       <div>
+        
+      <div class="contenedorwallp">
         <img src={CookiePolyticsImg} className="imgPolytics" alt="Cookie Polytics banner" />
+        <div className="centrado">POLÍTICAS DE COOKIES <p style={{fontSize:"18px", fontWeight:"normal"}}>Tipo de cookies que usamos y con qué finalidad se utilizan</p> </div>
+      </div>
 
         <div className='containerPolytics'>
-          <h2>Política de Cookies</h2>
+         
           En esta web se utilizan cookies de terceros y propias para conseguir que tengas una mejor experiencia de navegación, puedas compartir contenido en redes sociales y para que podamos obtener estadísticas de los usuarios.
           <br />
           Puedes evitar la descarga de cookies a través de la configuración de tu navegador, evitando que las cookies se almacenen en su dispositivo.
