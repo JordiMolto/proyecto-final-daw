@@ -2,17 +2,19 @@ import React, { Component } from 'react'
 import PrivatePolyticsImg from '../../imgs/politicas_privacidad.png'
 import '../css/Polytics.css'
 import FooterComp from '../layouts/FooterComp'
+import ButtonComp from '../section/ButtonComp'
 
 export default class PoliticasPrivacidad extends Component {
   render() {
     return (
       <div >
        
-      <div class="contenedorwallp">
-        <img src={PrivatePolyticsImg} className="imgPolytics" alt="Cookie Polytics banner" />
+      <div className="contenedorwallp">
+        <img src={PrivatePolyticsImg} className="imgPolytics" alt="Privacy Polytics banner" />
         <div className="centrado">POLÍTICAS DE PRIVACIDAD <p style={{fontSize:"18px", fontWeight:"normal"}}>Garantizamos la seguridad y el uso lícito de los datos de nuestros usuarios o clientes</p> </div>
       </div>
 
+        <ButtonComp className="button-general white" href="/" text="<-- Vovler atrás"></ButtonComp>
         <div className='containerPolytics'>
           <h3>I. POLÍTICA DE PRIVACIDAD Y PROTECCIÓN DE DATOS</h3>
           <a>https://www.jordimolto.dev</a>
@@ -28,7 +30,7 @@ export default class PoliticasPrivacidad extends Component {
           - El Real Decreto 1720/2007, de 21 de diciembre, por el que se aprueba el Reglamento de desarrollo de la Ley Orgánica 15/1999, de 13 de diciembre, de Protección de Datos de Carácter Personal (RDLOPD).
           <br />
           - La Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y de Comercio Electrónico (LSSI-CE).
-          <br />          <br /><h4>Identidad del responsable del tratamiento de los datos personales</h4>
+          <br /><br /><h4>Identidad del responsable del tratamiento de los datos personales</h4>
           <p>Dirección: Calle Murillo Alcoy, 03802
             <br />
             Teléfono de contacto: 652376830
@@ -151,6 +153,7 @@ export default class PoliticasPrivacidad extends Component {
           <br />
           Este documento de Política de Privacidad de un sitio web ha sido creado mediante el generador de plantilla de política de privacidad online el día 01/07/2021.
         </div>
+
         <FooterComp></FooterComp>
       </div>
     )

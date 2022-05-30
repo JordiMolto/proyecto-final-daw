@@ -11,7 +11,6 @@ export default class Icons extends Component {
         <section id="icons">
           <div className="icons-center">
             <article className="icons">
-
               <div className=" slide-up icons-text">
                 <div className="icons-icon"><FaNetworkWired className='fas' /></div>
                 <h2 className="icons-subtitle">Pruebas y testing</h2>

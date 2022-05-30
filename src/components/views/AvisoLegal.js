@@ -2,22 +2,23 @@ import React, { Component } from 'react'
 import AvisoLegalImg from '../../imgs/aviso_legal.jpg'
 import '../css/Polytics.css'
 import FooterComp from '../layouts/FooterComp'
-
+//import Breadcrumb from '../layouts/MuiBreadcrumbs'
+import ButtonComp from '../section/ButtonComp'
 export default class AvisoLegal extends Component {
   render() {
     return (
       <div>
 
-        <div class="contenedorwallp">
-          <img src={AvisoLegalImg} className="imgPolytics" alt="Cookie Polytics banner" />
+        <div className="contenedorwallp">
+          <img src={AvisoLegalImg} className="imgPolytics" alt="Aviso Legal banner" />
           <div className="centrado">AVISO LEGAL <p style={{ fontSize: "18px", fontWeight: "normal" }}>Identificación del propietario</p> </div>
         </div>
-
+        <ButtonComp className="button-general white" href="/" text="<-- Vovler atrás"></ButtonComp>
         <div className='containerPolytics'>
-          AVISO LEGAL Y CONDICIONES GENERALES DE USO
-          https://www.jordimolto.dev
+          <h3>AVISO LEGAL Y CONDICIONES GENERALES DE USO</h3>
+          <a>https://www.jordimolto.dev</a>
           <br />
-          I. INFORMACIÓN GENERAL
+          <br /><h4>I. INFORMACIÓN GENERAL</h4>
           En cumplimiento con el deber de información dispuesto en la Ley 34/2002 de Servicios de la Sociedad de la Información y el Comercio Electrónico (LSSI-CE) de 11 de julio, se facilitan a continuación los siguientes datos de información general de este sitio web:
           <br />
           La titularidad de este sitio web, https://www.jordimolto.dev, (en adelante, Sitio Web) la ostenta: Jordi Moltó Solís, con NIF: 21806263D, y cuyos datos de contacto son:
@@ -28,7 +29,7 @@ export default class AvisoLegal extends Component {
           <br />
           Email de contacto: jordimolto1@gmail.com
           <br />
-          II. TÉRMINOS Y CONDICIONES GENERALES DE USO
+          <br /><h4>II. TÉRMINOS Y CONDICIONES GENERALES DE USO</h4>
           El objeto de las condiciones: El Sitio Web
           El objeto de las presentes Condiciones Generales de Uso (en adelante, Condiciones) es regular el acceso y la utilización del Sitio Web. A los efectos de las presentes Condiciones se entenderá como Sitio Web: la apariencia externa de los interfaces de pantalla, tanto de forma estática como de forma dinámica, es decir, el árbol de navegación; y todos los elementos integrados tanto en los interfaces de pantalla como en el árbol de navegación (en adelante, Contenidos) y todos aquellos servicios o recursos en línea que en su caso ofrezca a los Usuarios (en adelante, Servicios).
           <br />
@@ -51,14 +52,14 @@ export default class AvisoLegal extends Component {
           <br />
           El Usuario declara ser mayor de edad y disponer de la capacidad jurídica suficiente para vincularse por las presentes Condiciones. Por lo tanto, este Sitio Web de Jordi Molto DEV no se dirige a menores de edad. Jordi Molto DEV declina cualquier responsabilidad por el incumplimiento de este requisito.
           <br />
-          III. ACCESO Y NAVEGACIÓN EN EL SITIO WEB: EXCLUSIÓN DE GARANTÍAS Y RESPONSABILIDAD
+          <br /><h4>III. ACCESO Y NAVEGACIÓN EN EL SITIO WEB: EXCLUSIÓN DE GARANTÍAS Y RESPONSABILIDAD</h4>
           Jordi Molto DEV no garantiza la continuidad, disponibilidad y utilidad del Sitio Web, ni de los Contenidos o Servicios. Jordi Molto DEV hará todo lo posible por el buen funcionamiento del Sitio Web, sin embargo, no se responsabiliza ni garantiza que el acceso a este Sitio Web no vaya a ser ininterrumpido o que esté libre de error.
           <br />
           Tampoco se responsabiliza o garantiza que el contenido o software al que pueda accederse a través de este Sitio Web, esté libre de error o cause un daño al sistema informático (software y hardware) del Usuario. En ningún caso Jordi Molto DEV será responsable por las pérdidas, daños o perjuicios de cualquier tipo que surjan por el acceso, navegación y el uso del Sitio Web, incluyéndose, pero no limitándose, a los ocasionados a los sistemas informáticos o los provocados por la introducción de virus.
           <br />
           Jordi Molto DEV tampoco se hace responsable de los daños que pudiesen ocasionarse a los usuarios por un uso inadecuado de este Sitio Web. En particular, no se hace responsable en modo alguno de las caídas, interrupciones, falta o defecto de las telecomunicaciones que pudieran ocurrir.
           <br />
-          IV. POLÍTICA DE ENLACES
+          <br /> <h4>IV. POLÍTICA DE ENLACES</h4>
           Se informa que el Sitio Web de Jordi Molto DEV pone o puede poner a disposición de los Usuarios medios de enlace (como, entre otros, links, banners, botones), directorios y motores de búsqueda que permiten a los Usuarios acceder a sitios web pertenecientes y/o gestionados por terceros.
           <br />
           La instalación de estos enlaces, directorios y motores de búsqueda en el Sitio Web tiene por objeto facilitar a los Usuarios la búsqueda de y acceso a la información disponible en Internet, sin que pueda considerarse una sugerencia, recomendación o invitación para la visita de los mismos.
@@ -83,7 +84,7 @@ export default class AvisoLegal extends Component {
           <br />
           El establecimiento del hipervínculo no implicará la existencia de relaciones entre Jordi Molto DEV y el titular del sitio web desde el cual se realice, ni el conocimiento y aceptación de Jordi Molto DEV de los contenidos, servicios y/o actividades ofrecidos en dicho sitio web, y viceversa.
           <br />
-          V. PROPIEDAD INTELECTUAL E INDUSTRIAL
+          <br /> <h4>V. PROPIEDAD INTELECTUAL E INDUSTRIAL</h4>
           Jordi Molto DEV por sí o como parte cesionaria, es titular de todos los derechos de propiedad intelectual e industrial del Sitio Web, así como de los elementos contenidos en el mismo (a título enunciativo y no exhaustivo, imágenes, sonido, audio, vídeo, software o textos, marcas o logotipos, combinaciones de colores, estructura y diseño, selección de materiales usados, programas de ordenador necesarios para su funcionamiento, acceso y uso, etc.). Serán, por consiguiente, obras protegidas como propiedad intelectual por el ordenamiento jurídico español, siéndoles aplicables tanto la normativa española y comunitaria en este campo, como los tratados internacionales relativos a la materia y suscritos por España.
           <br />
           Todos los derechos reservados. En virtud de lo dispuesto en la Ley de Propiedad Intelectual, quedan expresamente prohibidas la reproducción, la distribución y la comunicación pública, incluida su modalidad de puesta a disposición, de la totalidad o parte de los contenidos de esta página web, con fines comerciales, en cualquier soporte y por cualquier medio técnico, sin la autorización de Jordi Molto DEV.
@@ -92,13 +93,14 @@ export default class AvisoLegal extends Component {
           <br />
           En caso de que el Usuario o tercero considere que cualquiera de los Contenidos del Sitio Web suponga una violación de los derechos de protección de la propiedad intelectual, deberá comunicarlo inmediatamente a Jordi Molto DEV a través de los datos de contacto del apartado de INFORMACIÓN GENERAL de este Aviso Legal y Condiciones Generales de Uso.
           <br />
-          VI. ACCIONES LEGALES, LEGISLACIÓN APLICABLE Y JURISDICCIÓN
+          <br /><h4>VI. ACCIONES LEGALES, LEGISLACIÓN APLICABLE Y JURISDICCIÓN</h4>
           Jordi Molto DEV se reserva la facultad de presentar las acciones civiles o penales que considere necesarias por la utilización indebida del Sitio Web y Contenidos, o por el incumplimiento de las presentes Condiciones.
           <br />
           La relación entre el Usuario y Jordi Molto DEV se regirá por la normativa vigente y de aplicación en el territorio español. De surgir cualquier controversia en relación con la interpretación y/o a la aplicación de estas Condiciones las partes someterán sus conflictos a la jurisdicción ordinaria sometiéndose a los jueces y tribunales que correspondan conforme a derecho.
           <br />
           Este documento de Aviso Legal y Condiciones Generales de uso del sitio web ha sido creado mediante el generador de plantilla de aviso legal y condiciones de uso online el día 16/07/2021.
         </div>
+
         <FooterComp></FooterComp>
       </div>
     )

@@ -6,8 +6,9 @@
 }
 
 .centerWallpapers {
-    column-count: 3;
+    column-count: auto;
     width: 1200px;
+    text-align: center;
 }
 
 .containerWallpapers article {
@@ -52,7 +53,7 @@
 
 .wallp_text1 {
     max-width: 700px;
-    margin: 130px 15% 70px 15%;
+    margin: 80px 15% 70px 15%;
 }
 
 .wallp_text2 {
@@ -112,6 +113,7 @@
         width: 70%;
         height: auto;
     }
+
 }
 
 @media (max-width: 600px) {
@@ -126,5 +128,11 @@
     .imgPolytics {
         height: 200px!important;
     }
+    .centerWallpapers article{
+       width: 250px;
+    }
+    .centerWallpapers {
+        padding: 0 25px;
+     }
 
 }

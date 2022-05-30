@@ -6,6 +6,7 @@ import WallpapersBanner from '../../imgs/banner_wallpapers2.jpg'
 import WoYj5H from '../../imgs/woyth.jpeg'
 import ButtonComp from '../section/ButtonComp'
 
+
 function Wallpapers() {
   const [photos, setPhotos] = useState([])
   //const open = url => window.open(url)
@@ -13,9 +14,9 @@ function Wallpapers() {
   return (
     <div>
 
-      <div class="contenedorwallp">
-        <img src={WallpapersBanner} className="imgPolytics" alt="Cookie Polytics banner" />
-        <div className="centrado">Wallpapers<p style={{fontSize:"18px", fontWeight:"normal"}}>¡Los mejores fondos de pantalla GRATUITOS!</p></div>
+      <div className="contenedorwallp">
+        <img src={WallpapersBanner} className="imgPolytics" alt="banner página wallpapers" />
+        <div className="centrado">Wallpapers<p style={{ fontSize: "18px", fontWeight: "normal" }}>¡Los mejores fondos de pantalla GRATUITOS!</p></div>
       </div>
 
       <div className='wallp_text1'>
@@ -24,7 +25,7 @@ function Wallpapers() {
         </p>
       </div>
       <div className='wallp_text2'>
-        <img src={WoYj5H} className="woyj" alt="Cookie Polytics banner" />
+        <img src={WoYj5H} className="woyj" alt="imagen descriptiva wallpapers" />
         <p>
           <b>¡Si buscas el wallpaper perfecto echa un vistazo a esta herramienta gratuita!</b> <br /><br />
           Si te resulta muy baja la resolución de las imágenes, siempre puedes usar la fiel e impecable herramienta <b>PhotoZoom Pro</b> para duplicar el tamaño de casi cualquier imagen sin perder calidad. Incluso disponemos de una app para Windows.
@@ -62,10 +63,11 @@ function Wallpapers() {
           {photos.map(photo =>
             <article key={photo.id} >
               <img alt={photo.alt_description} src={photo.urls.regular} />
-              <ButtonComp className="button-header" href={photo.links.download} text="Descargar Gratis" ></ButtonComp>  
+              <ButtonComp className="button-general" href={photo.links.download} text="Descargar Gratis" ></ButtonComp>
             </article>)}
         </div>
       </div>
+      <ButtonComp className="button-general" href="/" text="<-- Vovler atrás"></ButtonComp>
       <FooterComp></FooterComp>
     </div>
   );

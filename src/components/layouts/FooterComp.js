@@ -4,13 +4,7 @@ import Logo from '../../imgs/logo_transparent.png'
 import '../css/Footer.css'
 import { Link } from "react-router-dom";
 
-/* 
-En vez de crear los componentes y darles el estilo directamente, los creo con styled components
-divPadre = (props) => {
-    return <div style={{padding: '30px'}}{...props}/>
-}
-*/
-
+//componentes creados con styled-components
 const DivPadre = styled.div`
     background-color: rgb(59, 0, 126);
   text-align: center;

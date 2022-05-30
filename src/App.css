@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 /* PALETA DE COLORES */
 :root {
   --color-negro: #181818;
@@ -6,12 +7,23 @@
   --color-morado-oscuro: #332179;
   --color-morado-claro: #7a19f1;
   --color-amarillo: #f2b200;
+  --blue: rgb(0, 0, 27);
+  --white: white;
 }
 
 /*
 .App {
   text-align: center;
 }*/
+body{
+  font-family: 'Nunito', sans-serif!important;
+}
+h1,h2,h3,h4,h5{
+  font-weight: bold!important;
+}
+p{
+  font-size: 19px;
+}
 
 .App-logo {
   height: 40vmin;
@@ -118,3 +130,12 @@
     text-align: center;
   }
 }
+@media (max-width: 500px) {
+  .profile{
+    display: block!important;
+  }
+  .profile p{
+    font-size: 5vw;
+  }
+}
+  

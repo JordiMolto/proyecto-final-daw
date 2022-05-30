@@ -7,8 +7,8 @@ export default class Header extends Component {
       <div>
         <section className='sectionHeader'>
           <div className='content'>
-            <div className='zoom'>
-            <h2><span style={{color: "#a678ff"}}>&#123;</span> Hola Mundo <span style={{color: "#a678ff"}}>; &#125;</span> </h2>
+            <div className='zoom holamundo'>
+              <h2><span style={{ color: "#a678ff" }}>&#123;</span> Hola Mundo <span style={{ color: "#a678ff" }}>; &#125;</span> </h2>
             </div>
             <p>
               Me llamo Jordi, soy desarrollador web y este es mi portfolio!<br />
@@ -24,7 +24,7 @@ export default class Header extends Component {
                   <li>ASESORAMIENTO</li>
                 </ul>
               </div>
-              <ButtonComp className="button-header zoom" href="#plans" text="Trabajemos juntos!"></ButtonComp>
+              <ButtonComp className="button-general zoom" href="#id_plans" text="Trabajemos juntos!"></ButtonComp>
             </div>
           </div>
         </section>

@@ -1,0 +1,122 @@
+/* PALETA DE COLORES */
+:root {
+    --color-negro: #181818;
+    --color-blanco: #fff;
+    --color-morado: #5b43d6;
+    --color-morado-oscuro: #332179;
+    --color-morado-claro: #7a19f1;
+    --color-amarillo: #f2b200;
+    --morado-negro: #140e35;
+    --white2: rgb(224, 224, 224);
+}
+
+#darkMode {
+    background: transparent url("../../imgs/sol.svg") no-repeat center;
+    background-size: 30px 30px;
+    width: 45px;
+    height: 45px;
+    filter: grayscale(100%);
+    border: none;
+    border-radius: 50%;
+    transition: background-color 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+#darkMode.clicked {
+    filter: none !important;
+}
+
+#darkMode:hover {
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes rotate {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+#darkMode:hover {
+    -webkit-animation: 6s rotate linear infinite;
+    animation: 6s rotate linear infinite;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+}
+
+
+/* MODO OSCURO */
+.light .wallp_text2,
+.light .h3text,
+.light .wallp_text1,
+.light .h2contact,
+body.light #id_about {
+    color: var(--white2);
+}
+
+.light .buscadorWallpapers,
+.light .containerWallpapers,
+body.light {
+    background: linear-gradient(336deg, rgba(22,12,54,1) 22%, rgb(33, 25, 71) 100%);
+}
+
+.light .sc-hKMtZM,
+.light span,
+.light select,
+.light .containerPolytics,
+.light .templates_descrip h1 {
+    color: rgb(224, 224, 224);
+}
+
+.light .icons-icon svg {
+    color: rgb(228, 228, 228);
+}
+
+.light .icons-subtitle,
+.light .templates_descrip p {
+    color: rgb(255, 255, 255);
+}
+
+.light #icons {
+    color: rgb(165, 160, 160);
+}
+
+.light .panel {
+    background-color: rgb(211, 211, 211);
+}
+
+.light .button-general {
+    color: #e0e0e0 !important;
+    background-color: #140e35 !important;
+}
+
+.light .button-general:hover {
+    color: #ffffff !important;
+    background-color: #0b081f !important;
+}
+
+
+.light .buscadorWallpapers input {
+    background-color: #cacaca;
+}
+
+/* MODO CLARO */
+body.dark {
+    background-color: var(--rgb(224, 224, 224));
+}
+.light .profile{
+    color: white;
+  }

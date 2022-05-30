@@ -8,19 +8,11 @@ import { LoginButton } from '../views/Login';
 import { LogoutButton } from '../views/Logout';
 import { Profile } from '../Profile';
 import { useAuth0 } from '@auth0/auth0-react'
+import DarkMode from '../section/DarkMode';
 
 
 function NavbarComp() {
     const { isAuthenticated } = useAuth0();
-
-    /* const navigate = useNavigate();
-     
-     function handleClick() {
-   navigate('/home');
-}*/
-
-
-
 
     //utilizamos este parámetro para hacer comprobaciones en el login
     return (
@@ -36,23 +28,28 @@ function NavbarComp() {
                                 <Nav.Link className='navText' as={Link} to={'/'}>Home</Nav.Link>
                                 {/*<Link to="/politicasPrivacidad">AboutLINK</Link>*/}
                                 <a className='navText' href='/#id_about' >About</a>
-                                <a className='navText' href='/#id_skills'>Conocimientos</a>
+                                <a className='navText' href='/#id_skills'>Skills</a>
                                 <a className='navText' href='/#id_templates'>Templates</a>
                                 <a className='navText' href='/#id_plans'>Precios</a>
                                 <Nav.Link className='navText' as={Link} to={'/wallpapers'}>Wallpapers</Nav.Link>
                                 <Nav.Link className='navText' as={Link} to={'/contact'}>Contacto</Nav.Link>
-                            </Nav>
-
-                            {/* SI ESTÁ AUTENTICADO nos tiene que mostrar el Perfil y el Logout Button, y sino, el Login Button */}
+                                {/* si ESTÁ AUTENTICADO nos tiene que mostrar el Perfil y el Logout Button, y sino, el Login Button */}
                             {isAuthenticated ? <>
-                                <Profile></Profile>
+                                <DarkMode/>
                                 <LogoutButton></LogoutButton>
                             </>
                                 : <LoginButton></LoginButton>}
+                            </Nav>
+
 
                         </Navbar.Collapse>
                     </Container>
                 </Navbar>
+                            {/* si ESTÁ AUTENTICADO nos tiene que mostrar el Perfil y el Logout Button, y sino, el Login Button */}
+                            {isAuthenticated ? <>
+                                <Profile></Profile>
+                            </>
+                                : <></>}
             </div>
             <Outlet></Outlet>
         </ >

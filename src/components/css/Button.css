@@ -8,7 +8,7 @@
     --color-amarillo: #f2b200;
   }
   
-.button-header {
+.button-general {
     background-color: #f2b200;
     border-radius: 10px;
     color: rgb(0, 0, 0);
@@ -22,34 +22,45 @@
     transition-duration: 0.4s;
    }
    
-   .button-header:hover {
+   .button-general:hover {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.3),0 17px 40px 0 rgba(0,0,0,0.4);
     color: rgb(0, 0, 0)!important;
-    background-color: #f2a500;
+    background-color: #e79e00;
     cursor: pointer;
 }
 
-.button-nav {
-    background-color: #ffffff;
-    border-radius: 10px;
-    color: rgb(0, 0, 0);
-    padding: 8px 15px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 20px;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
+.white {
+    background-color: #ffffff!important;
+    
    }
-   
-   .button-nav:hover {
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.3),0 17px 40px 0 rgba(0,0,0,0.4);
-    color: rgb(0, 0, 0)!important;
-    background-color: #d6d6d6;
-    cursor: pointer;
+   .white:hover {
+    background-color: #d6d6d6!important;
 }
+.aa {
+    background-color: rgba(202, 202, 202, 0.877)!important;
+    cursor: pointer;
+    padding: 0 5px;
+   }
+
    
-.button-nav2:hover {
-    background-color: #ce0000!important;
+#id_plans .hide-btn {
+    display: none;
+    padding: 0 15px;
+    
+}
+#id_plans .button-general:hover{
+    background-color: rgba(128, 128, 128, 0.788);
+    cursor: not-allowed;
+}
+#id_plans .button-general:hover + .hide-btn {
+    display: block;
+    color: #fff;
+    font-weight: bold;
+}
+
+@media (min-width: 850px) {
+    .btn-templates {
+        font-size: 22px;
+        margin-top: 0px;
+    }
 }

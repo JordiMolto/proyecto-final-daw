@@ -2,16 +2,18 @@ import React, { Component } from 'react'
 import CookiePolyticsImg from '../../imgs/cookie_privacy.jpg'
 import '../css/Polytics.css'
 import FooterComp from '../layouts/FooterComp'
+import ButtonComp from '../section/ButtonComp'
 
 export default class PoliticasCookies extends Component {
   render() {
     return (
       <div>
         
-      <div class="contenedorwallp">
+      <div className="contenedorwallp">
         <img src={CookiePolyticsImg} className="imgPolytics" alt="Cookie Polytics banner" />
         <div className="centrado">POLÍTICAS DE COOKIES <p style={{fontSize:"18px", fontWeight:"normal"}}>Tipo de cookies que usamos y con qué finalidad se utilizan</p> </div>
       </div>
+        <ButtonComp className="button-general white" href="/" text="<-- Vovler atrás"></ButtonComp>
 
         <div className='containerPolytics'>
          
@@ -105,6 +107,7 @@ export default class PoliticasCookies extends Component {
           <br />
           Cuando se produzcan cambios significativos en esta Política de Cookies, estos se comunicarán a los usuarios bien mediante la web o a través de correo electrónico a los usuarios registrados.
         </div>
+
         <FooterComp></FooterComp>
       </div>
 

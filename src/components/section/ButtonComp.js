@@ -2,7 +2,8 @@ import React from "react";
 
 const Button = (props) => {
   return (
-      <a id={props.id} className={props.className} onClick={props.onClick} href={props.href}>{props.text}</a>
+    //creamos las propiedades que se pueden pedir desde la llamada al componente
+    <a id={props.id} className={props.className} onClick={props.onClick} href={props.href}>{props.text}</a>
   );
 }
 

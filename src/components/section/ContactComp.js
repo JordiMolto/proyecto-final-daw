@@ -20,12 +20,16 @@ function ContactComp() {
     console.log(newData)
   }
 
-  function enviarEmail(e) {
-    e.preventDefault();
-    emailjs.init('HEsYcEtJac7K7X0la');
-    emailjs.sendForm('service_lqm13s1', 'template_gqgypgm', e.target,).then(res => {
+  function enviarEmail(event) {
+    event.preventDefault();
+    //conexión/configuración con EmailJS
+    emailjs.init('HEsYcEtJac7K7X0la'); //ID publica
+    //conectamos con el servicio y el template
+    emailjs.sendForm('service_lqm13s1', 'template_gqgypgm', event.target,).then(res => {
       console.log(res);
     })
+
+    //una vez se envíe, limpiamos los campos del form y enviamos alerta de "success"
     document.getElementById('nombreForm').value = "";
     document.getElementById('apellidosForm').value = "";
     document.getElementById('emailForm').value = "";
@@ -37,7 +41,7 @@ function ContactComp() {
 
   return (
 
-    <div >
+    <div  >
       <form onSubmit={enviarEmail} className='numero bodyContact'>
         <div className='containerContact'>
           <div className='row100'>

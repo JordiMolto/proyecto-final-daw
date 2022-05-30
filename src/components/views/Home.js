@@ -8,9 +8,12 @@ import styledComponents from 'styled-components'
 import Skills from '../section/Skills'
 import Plans from '../section/Plans'
 import Templates from '../section/Templates'
+//import MuiBreadcrumbs from '../layouts/MuiBreadcrumbs'
+
 export default class Home extends Component {
   render() {
-  const H2title = styledComponents.h2`
+  //creamos componente con styled-components
+  const H1title = styledComponents.h1`
   text-align: center;
   width: 100%;
   color: #000000;
@@ -19,14 +22,16 @@ export default class Home extends Component {
   `
     return (
       <div>
+        
         <Header></Header>
+        {/*<MuiBreadcrumbs></MuiBreadcrumbs>*/}
         <Icons></Icons>
         <About></About>
         <Skills ></Skills>
         <Templates></Templates>
         <Plans></Plans>
         
-        <H2title>Contacta conmigo!</H2title>
+        <H1title id="id_aa" >Contacta conmigo!</H1title>
         <ContactComp></ContactComp>
         <Footer></Footer>
       </div>

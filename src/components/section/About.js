@@ -8,10 +8,9 @@ export default class About extends Component {
       <div >
         <section id="id_about" className='about'>
           <div className='content'>
-              <img src={Avatar} className="slide-up imageAbout2" alt="Profile2" />
+              <img src={Avatar} className="slide-up imageAbout2" alt="Imagen de Jordi Moltó" />
             <div className='about-text'>
               <h2>Me presento :)</h2>
-              
               <h5>FRONT-END Developer & Designer</h5>
               <p>
                 Me llamo Jordi y soy un apasionado del desarrollo FRONTEND. Empecé a crear mis primeras páginas web y a formarme en este sector a los 14 años, actualmente estoy trabajando en acceseo como Desarrollador y Técnico SEO.
@@ -23,7 +22,7 @@ export default class About extends Component {
                 He trabajado con decenas de clientes y páginas web, y me encanta afrontar nuevos retos.
 
               </p>
-              <ButtonComp className="button-header" text="Trabajemos juntos!"></ButtonComp>
+              <ButtonComp className="button-general" href="/contact" text="Contacta conmigo!"></ButtonComp>
             </div>
           </div>
         </section>
