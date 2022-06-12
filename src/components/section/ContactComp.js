@@ -38,7 +38,6 @@ function ContactComp() {
     alert("Mensaje enviado correctamente!")
   }
 
-
   return (
 
     <div  >

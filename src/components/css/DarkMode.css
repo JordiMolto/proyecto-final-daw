@@ -18,7 +18,6 @@
     filter: grayscale(100%);
     border: none;
     border-radius: 50%;
-    transition: background-color 0.3s ease-in-out, filter 0.3s ease-in-out;
 }
 
 #darkMode.clicked {
@@ -79,6 +78,10 @@ body.light {
 .light .containerPolytics,
 .light .templates_descrip h1 {
     color: rgb(224, 224, 224);
+}
+
+.light select option{
+    color: var(--color-morado-oscuro) ;
 }
 
 .light .icons-icon svg {

@@ -14,13 +14,13 @@ export const Profile = () => {
         //si está autenticado, entonces que nos devuelva los datos que yo quiera coger:
         //en este caso su img, su nombre y su email
         isAuthenticated && (
-            <div className="profile" style={{display:"flex", float:"right", padding:"0 10%", margin:"20px 0"}}>
-                <div style={{ margin:"0 20px", marginTop:"10px"}}>
-                <h3>Perfil de usuario:</h3>
-                <p><b>Nombre:</b> {user.name}</p>
-                <p><b>Email:</b> {user.email}</p>
+            <div className="profile" style={{display:"flex", float:"right", padding:"0 10%", margin:"15px 0"}}>
+                <div style={{ margin:"0 15px", marginTop:"10px"}}>
+                <h5>Perfil de usuario:</h5>
+                <p style={{ fontSize:"16px"}}><b>Nombre:</b> {user.name}</p>
+                <p style={{ fontSize:"16px"}}><b>Email:</b> {user.email}</p>
                 </div>
-                <img style={{width:"auto", height:"100%", marginRight:"20px", marginTop:"10px", marginLeft:"20px"}} src={user.picture} alt={user.name} />
+                <img style={{width:"auto", height:"100%", marginRight:"15px", marginTop:"10px", marginLeft:"15px"}} src={user.picture} alt={user.name} />
             </div>
         )
     );
